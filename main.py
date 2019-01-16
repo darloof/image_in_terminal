@@ -20,7 +20,6 @@ def makeprint(n):
         print(chr(9673), end=' ')
     elif (n == 9):
         print(chr(11204), end=' ')
-#filename = '/home/mohammadreza/w/dice_portrait/image1.jpg'
 filename = argv[1]
 img = Image.open(filename)
 img = ImageOps.grayscale(img)
@@ -28,7 +27,6 @@ img = ImageOps.autocontrast(img)
 
 
 sqw = int(argv[2])
-#sqw = 100
 sqsize = int(img.width / sqw)
 sqh = int(img.height * sqsize / sqw)
 
